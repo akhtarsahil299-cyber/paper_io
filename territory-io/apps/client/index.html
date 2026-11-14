@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#1b1446" />
+  <title>TERRITORY.IO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito:wght@500;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div id="game"></div>
+  <div id="hud" class="hidden">
+    <div class="hud-tl">
+      <div class="card hud-me"><b id="h-name">Player</b><span id="h-pct" class="big">0.0%</span>
+        <small>Rank <b id="h-rank">-</b> · Kills <b id="h-kills">0</b></small></div>
+    </div>
+    <div class="hud-tc"><span id="h-time">0:00</span><small><b id="h-alive">0</b> alive</small></div>
+    <div class="hud-tr">
+      <div class="card lb"><ol id="h-board"></ol></div>
+      <div class="hud-btns"><button id="h-menu" aria-label="Menu" class="icon-btn">II</button><button id="h-mute" aria-label="Sound" class="icon-btn">♪</button></div>
+    </div>
+    <canvas id="h-mini" width="80" height="80"></canvas>
+    <div id="h-toast"></div>
+  </div>
+  <div id="ui"></div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
